@@ -150,7 +150,7 @@ func (r Record) RankString() string {
 // Description outputs the record rank details.
 func (r Record) Description() string {
 	return fmt.Sprintf(
-		fmt.Sprintf("%%s  %s  %s  %s  %s  %s", AverageFormat, NewAverageFormat, BayesAverageFormat, UsersRatedFormat, ChangeFormat),
+		fmt.Sprintf("%%s  %s  %s  %s  %s %%s %s", AverageFormat, NewAverageFormat, BayesAverageFormat, UsersRatedFormat, ChangeFormat),
 		StrOrNA(r.RankString()),
 		StrOrNA(r.Average),
 		StrOrNA(r.BayesAverage),
